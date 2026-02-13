@@ -1,0 +1,68 @@
+:root {
+    --bs-body-bg: #000000;
+    --bs-body-bg-rgb: 0,0,0;
+    --bs-body-color: #f4f4f5;
+    --bs-body-color-rgb: 244, 244, 245;
+    --bs-secondary-bg: #161619;
+    --bs-secondary-bg-rgb:22,22,25;
+    --bs-secondary: #f4f4f5;
+    --bs-secondary-rgb: 244, 244, 245;
+    --bs-tertiary-color: #232327;
+    --bs-tertiary-color-rgb: 35, 35, 39 ;
+    --bs-tertiary-bg: #dc3a21;
+    --bs-tertiary-bg-rgb:220, 58, 33;
+    --bs-border-color: #dc3a21;
+}
+.navbar-nav{
+    --bs-nav-link-color: #f4f4f5;
+    --bs-nav-link-hover-color: rgb(251, 96, 50);
+    --bs-nav-link-active-color: rgb(220, 58, 33);
+    --bs-navbar-active-color: rgb(220, 58, 33);
+    --bs-nav-link-active-bg: transparent;
+}
+.h1{
+    --bs-heading-color: #f4f4f5;
+    --bs-heading-color-rgb: 244, 244, 245;
+}
+
+
+body {
+    text-align: center;
+
+}
+.card{
+    --bs-card-border-color: #dc3a21;
+    --bs-card-border-width: 4px;
+    padding: 0;
+    background-color: #232327;
+}
+#card-holder{
+    margin: 0;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    overflow: hidden;
+    background-color: var(--bs-secondary-bg);
+}
+.card-img-top{
+    width: 100%;
+    scale: 1.1;
+}
+.card-text{
+
+}
+@media (min-width: 992px){
+    .navbar-expand-lg{
+        top: -100px;
+        z-index: 1000;
+        position: fixed;
+        transition: top .3s; /* Transition effect when sliding down (and up) */
+    }
+}
+@media (max-width: 991.98px) {
+    .navbar-expand-lg{
+        top: 0px;
+        z-index: 1000;
+        position: fixed;
+        transition: top .3s; /* Transition effect when sliding down (and up) */
+    }
+}
